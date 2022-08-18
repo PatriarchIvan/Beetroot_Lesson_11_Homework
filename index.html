@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,98 @@
     <title>Lesson 11 Positions</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="container">
-        
+
         <header class="header">
             <div class="header_links">
                 <button class="header_links__button">eng</button>
-                <a href="#" class="header_links__links">Documentation</a> 
-                <span>/</span> 
-                <a href="./html/who.html"  class="header_links__links">Who's using</a>
+                <a href="#" class="header_links__links">Documentation</a>
+                <span>/</span>
+                <a href="./html/who.html" class="header_links__links">Who's using</a>
             </div>
             <div class="header_logo">
                 <img src="./img/header/company-logo-black.svg" alt="company_logo" class="header_logo_img">
             </div>
         </header>
 
-        <aside class="sidebar">
-            <ul class='sidebar_list'>
-                <li class='sidebar_list_item'><a class="sidebar_list_item_link">Item_1</a></li>
-                <li class='sidebar_list_item'><a class="sidebar_list_item_link">Item_2</a></li>
-                <li class='sidebar_list_item'><a class="sidebar_list_item_link">Item_3</a></li>
-                <li class='sidebar_list_item'><a class="sidebar_list_item_link">Item_4</a></li>
-            </ul>
-        </aside>
+        <div class="container_content">
+
+            <aside class="sidebar">
+                <ul class='sidebar_list'>
+                    <li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link">introduction</a></li>
+                    <li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link">core components</a></li>
+                    <li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link">react fundamentals</a></li>
+                    <li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link">handling text input</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="container_section">
+                <section class="intro">
+                    <div class="intro_header">
+                        <h2 class="intro_header_main">introduction</h2>
+                        <h3 class="intro_header_secondary">Chapter 1</h3>
+                    </div>
+                    <div class="intro_text">
+                        <p class="intro_text_text">Welcome to the very start of your React Native journey! If you're
+                            looking for environment setup instructions, they've moved <a>to their own section.</a>
+                            Continue reading for an introduction to the documentation, Native Components, React, and
+                            more!</p>
+                    </div>
+                </section>
+
+                <section class="components">
+                    <div class="components_header">
+                        <h2 class="components_header_main">core components</h2>
+                        <h3 class="components_header_secondary">Chapter 2</h3>
+                    </div>
+                    <div class="components_text">
+                        <p class="components_text_text">React Native is an open source framework for building Android
+                            and iOS applications using React and the app platform’s native capabiles. With React Native,
+                            you use JavaScript to access your platform’s APIs as well as to describe the appearance and
+                            behavior of your UI using React components: bundles of reusable, nestable code. You can
+                            learn more about React in the next section. But first, let’s cover how components work in
+                            React Native.</p>
+                    </div>
+                </section>
+
+                <section class="fundamentals">
+                    <div class="fundamentals_header">
+                        <h2 class="fundamentals_header_main">react fundamentals</h2>
+                        <h3 class="fundamentals_header_secondary">Chapter 3</h3>
+                    </div>
+                    <div class="fundamentals_text">
+                        <p class="fundamentals_text_text">React Native runs on React, a popular open source library for
+                            building user interfaces with JavaScript. To make the most of React Native, it helps to
+                            understand React itself. This section can get you started or can serve as a refresher
+                            course.</p>
+                        <p class="fundamentals_text_text">We’re going to cover the core concepts behind React:</p>
+                        <p class="fundamentals_text_text"><span class="span_bold">+ components.</span> The rest of this
+                            introduction to React uses cats in its examples: friendly, approachable creatures that need
+                            names and a cafe to work in.</p>
+                        <p class="fundamentals_text_text"><span class="span_bold">+ JSX.</span> React and React Native
+                            use JSX, a syntax that lets you write elements inside JavaScript like so:
+                            <span class="span_bg">&lt/Text&gtHello, I am your cat!&lt/Text&gt</span>.</p>
+                        <p class="fundamentals_text_text">The React docs have a comprehensive guide to JSX you can refer
+                            to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are
+                            declaring a <span class="span_bg">name</span> for the cat, name, and embedding it with curly
+                            braces inside <span class="span_bg">&ltText&gt</span></p>
+                        <p class="fundamentals_text_text"><span class="span_bold">+ props.</span> Props is short for
+                            “properties”. </p>
+                        <p class="fundamentals_text_text"><span class="span_bold">+ state.</span> While you can think of
+                            props as arguments you use to configure how components render, state is like a component’s
+                            personal data storage. State is useful for handling data that changes over time or that
+                            comes from user interaction. State gives your components memory!</p>
+                    </div>
+                </section>
+
+                
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>

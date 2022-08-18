@@ -9,7 +9,7 @@
     --main-font-size: 28px;
     --main-font-style: 'PT Sans', sans-serif;
     --main-headers-font-style: 'Roboto Condensed', sans-serif;
-    --main-headers-font-size: 36px
+    --main-headers-font-size: 36px;
     --main-headers-secondary-font-style: 'Farro', sans-serif;
-    --main-headers-secondary-font-style: 24px;
+    --main-headers-secondary-font-size: 12px;
 }

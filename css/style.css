@@ -4,24 +4,25 @@ html,
 body {
     margin: 0 0;
     padding: 0 0;
-    position: relative;
+    background: url(../img/main/bg-picture.svg) no-repeat 
 }
 
 .container {
     max-width: 1200px;
     margin: 0 120px;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 .header_links__button {
     margin: 20px 50px 80px 0;
+    padding: 0 0;
     font-family: var(--header-button-font-style);
     font-size: var(--header-button-font-size);
     background-color: #fff;
@@ -33,7 +34,7 @@ body {
 .header_links__links+span {
     font-size: var(--header-links-font-size);
     font-family: var(--header-links-font-style);
-    font-weight: 700;
+    font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
     color:#000;
@@ -45,14 +46,94 @@ body {
 }
 
 .sidebar {
-    min-width: 400px;
-    position: sticky;
-    top: 150px;
+    min-width: 375px;
+    /* position: sticky; */
+    top: 50px;
 }
 
 .sidebar_list {
     list-style: none;
-    margin: 10px 10px;
+    margin: 10px 30px 10px 10px;
     padding: 0 0;
 }
 
+.sidebar_list_item {
+    margin: 0 0 70px 0;
+}
+
+.sidebar_list_item:last-of-type {
+    margin: 0 0 10px 0;
+}
+
+.sidebar_list_item_link {
+    font-family: var(--sidebar-links-font-style);
+    font-size: var(--sidebar-links-font-size);
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;
+}
+
+.container_content {
+    border: 1px solid #000;
+    display: flex;
+}
+
+
+.intro,
+.components,
+.fundamentals {
+   flex-basis: 65%;
+   margin: 0 0 70px 0;
+}
+
+.intro_header,
+.components_header,
+.fundamentals_header {
+    display: flex;
+}
+
+.intro_header::before, 
+.components_header::before,
+.fundamentals_header::before {    
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 8px;
+    background: #000;
+}
+
+.intro_header_main,
+.components_header_main,
+.fundamentals_header_main {
+    margin: 30px 0 40px 0;
+    font-family: var(--main-headers-font-style);
+    font-size: var(--main-font-size);
+    text-transform: uppercase;
+}
+
+.intro_header_secondary,
+.components_header_secondary,
+.fundamentals_header_secondary {
+    margin: 25px 0 0 20px;
+    font-family: var(--main-headers-secondary-font-style);
+    font-size: var(--main-headers-secondary-font-size);
+}
+
+.intro_text_text,
+.components_text_text,
+.fundamentals_text_text {
+    font-family: var(--main-font-style);
+    font-size: var(--main-font-size);
+}
+
+.fundamentals_text_text {
+    margin: 0 0 40px 0;
+}
+
+.span_bg {
+    background:#DAD;
+}
+
+.span_bold {
+    font-weight: 700;
+}
