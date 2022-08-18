@@ -4,7 +4,7 @@ html,
 body {
     margin: 0 0;
     padding: 0 0;
-    background: url(../img/main/bg-picture.svg) no-repeat 
+    background: url(../img/main/bg-picture.svg) no-repeat;
 }
 
 .container {
@@ -45,10 +45,15 @@ body {
     margin: 20px 0 80px 0;
 }
 
+.container_content {
+    position: relative;
+}
+
 .sidebar {
+    position: sticky;
     min-width: 375px;
-    /* position: sticky; */
     top: 50px;
+    bottom: 50px
 }
 
 .sidebar_list {
@@ -78,23 +83,25 @@ body {
     display: flex;
 }
 
-
 .intro,
 .components,
-.fundamentals {
+.fundamentals,
+.handling {
    flex-basis: 65%;
    margin: 0 0 70px 0;
 }
 
 .intro_header,
 .components_header,
-.fundamentals_header {
+.fundamentals_header,
+.handling_header {
     display: flex;
 }
 
 .intro_header::before, 
 .components_header::before,
-.fundamentals_header::before {    
+.fundamentals_header::before,
+.handling_header::before {    
     position: absolute;
     content: '';
     width: 100px;
@@ -104,7 +111,8 @@ body {
 
 .intro_header_main,
 .components_header_main,
-.fundamentals_header_main {
+.fundamentals_header_main,
+.handling_header_main {
     margin: 30px 0 40px 0;
     font-family: var(--main-headers-font-style);
     font-size: var(--main-font-size);
@@ -113,7 +121,8 @@ body {
 
 .intro_header_secondary,
 .components_header_secondary,
-.fundamentals_header_secondary {
+.fundamentals_header_secondary,
+.handling_header_secondary {
     margin: 25px 0 0 20px;
     font-family: var(--main-headers-secondary-font-style);
     font-size: var(--main-headers-secondary-font-size);
@@ -121,12 +130,14 @@ body {
 
 .intro_text_text,
 .components_text_text,
-.fundamentals_text_text {
+.fundamentals_text_text,
+.handling_text_text {
     font-family: var(--main-font-style);
     font-size: var(--main-font-size);
 }
 
-.fundamentals_text_text {
+.fundamentals_text_text,
+.handling_text {
     margin: 0 0 40px 0;
 }
 
