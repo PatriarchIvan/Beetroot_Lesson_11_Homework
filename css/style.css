@@ -4,7 +4,7 @@ html,
 body {
     margin: 0 0;
     padding: 0 0;
-    background: url(../img/main/bg-picture.svg) no-repeat;
+    background: url(../img/main/bg-picture.svg) no-repeat fixed right;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #000;
 }
 
 .header_links__button {
@@ -50,16 +49,17 @@ body {
 }
 
 .sidebar {
-    position: sticky;
-    min-width: 375px;
-    top: 50px;
-    bottom: 50px
+    position: relative;
+    min-width: 400px;
 }
 
 .sidebar_list {
+    position: sticky;
     list-style: none;
     margin: 10px 30px 10px 10px;
     padding: 0 0;
+    top: 50px;
+    left: 50px
 }
 
 .sidebar_list_item {
@@ -79,7 +79,6 @@ body {
 }
 
 .container_content {
-    border: 1px solid #000;
     display: flex;
 }
 
