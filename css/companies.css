@@ -1,5 +1,11 @@
 @import url('./_vars.css');
 
+html, 
+body {
+    background:none;
+    margin: 0 0;
+    padding: 0 0;
+}
 .inner_container_header_main {
     position: relative;
     margin: 0 0 60px 120px;
@@ -32,7 +38,7 @@
     width: 500px;
     height: 250px;
     background: #C9C9C9;
-    transition: transform 1.0s ease;
+    transition: transform 0.8s ease;
     transform-style: preserve-3d;
     box-shadow: 8px 4px 4px 0 #1A1A1A;
 }

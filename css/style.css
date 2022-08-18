@@ -63,6 +63,7 @@ body {
 }
 
 .sidebar_list_item {
+    position:relative;
     margin: 0 0 70px 0;
 }
 
@@ -163,15 +164,19 @@ body {
 }
 
 .header_links__links:hover {
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-.sidebar_list_item_link:hover {
-    font-weight: bolder;
     text-decoration: underline;
 }
 
 .header_links__button:hover {
     cursor: pointer;
+}
+
+.sidebar_list_item::before {
+    content:'';
+    position: absolute;
+    background:#BDBDBD;
+    width:375px;
+    height:1px;
+    left:0;
+    bottom: 0;
 }
