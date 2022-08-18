@@ -1,0 +1,60 @@
+@import url('./_vars.css');
+
+.inner_container_header_main {
+    position: relative;
+    margin: 0 0 60px 120px;
+    font-size: var(--main-font-size);
+    font-family: var(--sidebar-links-font-style);
+    text-transform: uppercase;
+}
+
+.inner_container_header_main::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -120px;
+    width: 100px;
+    height: 8px;
+    background: #000;
+}
+
+.inner_container_row {
+    display: flex;
+    margin: 0 0;
+}
+
+.card_front {
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 20px 15px; 
+    width: 500px;
+    height: 250px;
+    background: #C9C9C9;
+    transition: transform 1.0s ease;
+    transform-style: preserve-3d;
+    box-shadow: 8px 4px 4px 0 #1A1A1A;
+}
+
+.card_img {
+    display: flex;
+    align-self: center;
+}
+
+.card_front:hover,
+.card_front:focus {
+    background-color:#000;
+    cursor: pointer;
+    transform: rotateX(180deg);
+}
+
+.card_back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    transition: transform 0.8s ease;
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+}
