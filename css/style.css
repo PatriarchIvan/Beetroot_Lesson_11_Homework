@@ -1,0 +1,43 @@
+@import url('./_vars.css');
+
+html, 
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 120px;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_links__button {
+    margin: 20px 50px 20px 0;
+    font-family: var(--header-button-font-style);
+    font-size: var(--header-button-font-size);
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.header_links__links,
+.header_links__links+span {
+    font-size: var(--header-links-font-size);
+    font-family: var(--header-links-font-style);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;
+}
+
+.header_logo_img {
+    justify-self: flex-end;
+    margin: 15px 0;
+}

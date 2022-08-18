@@ -1,0 +1,15 @@
+@import url('./_fonts.css');
+:root {
+    --header-links-font-style: 'Alumni Sans Pinstripe', sans-serif; ;
+    --header-links-font-size: 22px;
+    --header-button-font-style: 'Tourney', cursive;
+    --header-button-font-size: 22px;
+    --sidebar-links-font-style: 'Roboto Condensed', sans-serif;
+    --sidebar-links-font-size: 36px;
+    --main-font-size: 28px;
+    --main-font-style: 'PT Sans', sans-serif;
+    --main-headers-font-style: 'Roboto Condensed', sans-serif;
+    --main-headers-font-size: 36px
+    --main-headers-secondary-font-style: 'Farro', sans-serif;
+    --main-headers-secondary-font-style: 24px;
+}
