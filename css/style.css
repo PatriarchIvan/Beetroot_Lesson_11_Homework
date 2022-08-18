@@ -152,7 +152,7 @@ body {
 .span_ital {
     font-style: italic;
 }
-
+/* COMPANIES.HTML */
 .inner_container_header_main {
     position: relative;
     margin: 0 0 60px 120px;
@@ -169,9 +169,6 @@ body {
     background: #000;
 }
 
-.inner_container {
-    position: relative;
-}
 .inner_container_row {
     display: flex;
     margin: 0 0;
@@ -180,33 +177,37 @@ body {
 .card_front {
     position: relative;
     display: flex;
+    align-self: center;
     justify-content: center;
     margin: 20px 15px; 
     width: 520px;
     height: 250px;
     background: #C9C9C9;
-    transition: transform 0.7s;
+    transition: transform 0.8s ease;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 #1A1A1A;
+    box-shadow: 14px 4px 8px 0 #1A1A1A;
+    z-index: 0;
 }
 
 .card_img {
     display: flex;
     align-self: center;
-    backface-visibility: hidden;
 }
 
-.card_front:hover {
-    background-color:#1A1A1A;
+.card_front:hover,
+.card_front:focus {
+    background-color:#000;
     cursor: pointer;
     transform: rotateX(180deg);
-    z-index: 0;
+    box-shadow: 8px 0 14px 4px #1A1A1A;
 }
 
 .card_back {
-    /* display: none; */
     position: absolute;
-    top: 105px;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    transition: transform 0.8s ease;
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
 }
-
