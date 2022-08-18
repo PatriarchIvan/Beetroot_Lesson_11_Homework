@@ -4,6 +4,7 @@ html,
 body {
     margin: 0 0;
     padding: 0 0;
+    position: relative;
 }
 
 .container {
@@ -16,10 +17,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
 }
 
 .header_links__button {
-    margin: 20px 50px 20px 0;
+    margin: 20px 50px 80px 0;
     font-family: var(--header-button-font-style);
     font-size: var(--header-button-font-size);
     background-color: #fff;
@@ -39,5 +41,18 @@ body {
 
 .header_logo_img {
     justify-self: flex-end;
-    margin: 15px 0;
+    margin: 20px 0 80px 0;
 }
+
+.sidebar {
+    min-width: 400px;
+    position: sticky;
+    top: 150px;
+}
+
+.sidebar_list {
+    list-style: none;
+    margin: 10px 10px;
+    padding: 0 0;
+}
+
