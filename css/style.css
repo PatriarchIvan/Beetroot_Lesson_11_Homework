@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    min-width: 1200px;
     margin: 0 120px;
-    border: 1px solid #000;
+    box-sizing: border-box;
 }
 
 .header {
@@ -147,3 +147,38 @@ body {
 .span_bold {
     font-weight: 700;
 }
+
+.span_ital {
+    font-style: italic;
+}
+
+.inner_container_header_main::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    background: #000;
+}
+
+.inner_container_header_main {
+    margin: 0 0 0 120px
+}
+
+.inner_container_row {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 20px 15px; 
+    width: 270px;
+    height: 180px;
+    background: #8E8E8E;
+}
+
+.card_img {
+    display: flex;
+    position:relative;
+    align-self: center;
+}
+
