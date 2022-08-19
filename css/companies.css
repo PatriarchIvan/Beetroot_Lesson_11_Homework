@@ -6,6 +6,7 @@ body {
     margin: 0 0;
     padding: 0 0;
 }
+
 .inner_container_header_main {
     position: relative;
     margin: 0 0 60px 120px;
@@ -40,7 +41,7 @@ body {
     background: #C9C9C9;
     transition: transform 0.8s ease;
     transform-style: preserve-3d;
-    box-shadow: 8px 4px 4px 0 #1A1A1A;
+    box-shadow: 2px 4px 4px 2px #1A1A1A;
 }
 
 .card_img {
@@ -48,6 +49,7 @@ body {
     align-self: center;
 }
 
+.card,
 .card_front:hover,
 .card_front:focus {
     background-color:#000;
