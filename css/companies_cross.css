@@ -1,3 +1,4 @@
+
 @import url('./_vars.css');
 
 html, 
@@ -26,12 +27,19 @@ body {
 }
 
 .inner_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     padding: 0 15px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .card {
@@ -42,16 +50,26 @@ body {
     margin: 15px 0;
     background: #C9C9C9;
     border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
     transition: transform 0.8s ease;
-    transform-style: preserve-3d;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .card_front {
     position: absolute;
     width: 270px;
     height: 180px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
     transition: transform 0.8s ease;
-    transform-style: preserve-3d;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .card_front_img {
@@ -73,9 +91,15 @@ body {
     height: 180px;
     background: #1A1A1A;
     border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
     transition: transform 0.8s ease;
-    transform: rotateX(-180deg);
-    backface-visibility: hidden;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .card_back_img {
@@ -89,45 +113,6 @@ body {
 
 .card:hover {
     cursor: pointer;
-    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
 }
-
-
-
-
-
-
-
-/* 
-.card_back {
-    display: flex;
-    justify-content: center;
-    align-self:center;
-    transition: transform 0.8s ease;
-    transform: rotateX(-180deg);
-    backface-visibility: hidden;
-}
-
- 
-.card_front {
-    position: relative;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 20px 15px; 
-    width: 500px;
-    height: 250px;
-    background: #C9C9C9;
-    transition: transform 0.8s ease;
-    transform-style: preserve-3d;
-    box-shadow: 2px 4px 4px 2px #1A1A1A;
-}
-
-.card,
-.card_front:hover,
-.card_front:focus {
-    background-color:#000;
-    cursor: pointer;
-    transform: rotateX(180deg);
-} */
-

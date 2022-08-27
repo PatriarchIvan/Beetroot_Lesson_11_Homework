@@ -1,0 +1,93 @@
+@import url('./_vars.css');
+
+html, 
+body {
+    background:none;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.inner_container_header_main {
+    position: relative;
+    margin: 0 0 60px 120px;
+    font-size: var(--main-font-size);
+    font-family: var(--sidebar-links-font-style);
+    text-transform: uppercase;
+}
+
+.inner_container_header_main::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -120px;
+    width: 100px;
+    height: 8px;
+    background: #000;
+}
+
+.inner_container {
+    display: flex;
+    position: relative;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card {
+    position: relative;
+    padding: 0 15px;
+    width: 270px;
+    height: 180px;
+    margin: 15px 0;
+    background: #C9C9C9;
+    border-radius: 8px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.card_front {
+    position: absolute;
+    width: 270px;
+    height: 180px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.card_front_img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card_back {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    padding: 0 15px;
+    margin: 0 15px;
+    width: 270px;
+    height: 180px;
+    background: #1A1A1A;
+    border-radius: 8px;
+    transition: transform 0.8s ease;
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+}
+
+.card_back_img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateX(180deg);
+}
